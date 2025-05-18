@@ -1,0 +1,6 @@
+commit-msg:
+  skip:
+    - merge
+  commands:
+    cz-commit:
+      run: "exec < /dev/tty && npx cz --hook || true"
