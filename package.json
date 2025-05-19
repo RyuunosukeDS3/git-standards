@@ -3,23 +3,24 @@
     "version": "1.0.0",
     "description": "Standard Git commit tooling with Commitizen, Gitmoji, Commitlint and Lefthook",
     "bin": {
-      "git-standards": "./cli.js"
+        "git-standards": "./cli.js"
     },
     "scripts": {
-      "commit": "cz",
-      "install-hooks": "lefthook install"
+        "commit": "cz",
+        "install-hooks": "lefthook install"
     },
     "config": {
-      "commitizen": {
-        "path": "cz-conventional-commit-gitmoji"
-      }
+        "commitizen": {
+            "path": "cz-conventional-commit-gitmoji"
+        }
     },
     "dependencies": {
-      "@commitlint/cli": "^18.0.0",
-      "@commitlint/config-conventional": "^18.0.0",
-      "commitizen": "^4.3.0",
-      "cz-conventional-commit-gitmoji": "^1.2.0",
-      "lefthook": "^1.4.0"
+        "@commitlint/cli": "^19.8.1",
+        "@commitlint/config-conventional": "^18.0.0",
+        "commitizen": "^4.3.1",
+        "commitlint-config-gitmoji": "^2.3.1",
+        "conventional-changelog-gitmoji-config": "^1.5.2",
+        "cz-conventional-commit-gitmoji": "^1.2.0",
+        "lefthook": "^1.4.0"
     }
-  }
-  
+}

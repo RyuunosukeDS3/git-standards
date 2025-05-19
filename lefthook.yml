@@ -1,6 +1,17 @@
-commit-msg:
-  skip:
-    - merge
+prepare-commit-msg:
   commands:
-    cz-commit:
-      run: "exec < /dev/tty && npx cz --hook || true"
+    commitzen:
+      skip:
+        - merge
+        - rebase
+      only: 
+       - run: test -r .czrc
+      interactive: true
+      run: git-cz --hook
+      env:
+        LEFTHOOK: 0
+
+commit-msg:
+  commands:
+    commitlint:
+      run: commitlint --edit {1} --extends gitmoji
