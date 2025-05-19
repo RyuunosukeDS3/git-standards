@@ -5,7 +5,7 @@ prepare-commit-msg:
         - merge
         - rebase
       only: 
-       - run: test -r .czrc
+       - run: test -r ~/.czrc
       interactive: true
       run: git-cz --hook
       env:
