@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Simple CLI that runs git-cz with your global config
+npx git-cz --hook

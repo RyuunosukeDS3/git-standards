@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Standard Git commit tooling with Commitizen, Gitmoji, Commitlint and Lefthook",
     "bin": {
-        "git-standards": "./cli.js"
+        "git-standards": "./bin/git-standards"
     },
     "scripts": {
         "commit": "cz",
