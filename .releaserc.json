@@ -1,6 +1,6 @@
 {
   "branches": ["main"],
   "extends": [
-    "./.releaserc.config.js"
+    "./releaserc.config.js"
   ]
 }
