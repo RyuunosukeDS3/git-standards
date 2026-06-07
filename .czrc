@@ -2,9 +2,7 @@
   "path": "cz-conventional-commit-gitmoji",
   "config": {
     "cz-conventional-commit-gitmoji": {
-      "issuePrefixes": ["#"],
-      "issuePrompt": "Add GitHub issue references (e.g. \"#123, #456\"):",
-      "issueRegex": "^#\\d+$"
+      "skipQuestions": ["issues", "breaking"]
     }
   }
 }
